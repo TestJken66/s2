@@ -33,7 +33,7 @@ jobs:
           git clone https://oauth2:${{ secrets.GTOKEN }}@github.com/TestJken66/scheduleCheck.git
           if [ $# == 0 ]; then
             echo  "克隆成功......"
-            cd UpdateTestApp
+            cd scheduleCheck
             chmod -R 777 *
             git config core.filemode false
             echo -e "* $(date "+%Y%m%d-%H%M%S")">>time.md
